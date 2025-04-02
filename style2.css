@@ -18,14 +18,18 @@
     background-color: rgb(255, 93, 118);
 }
 
+
+
+
+
 #registerform {
     width: 30%;
     margin: auto;
-    background-color: black;
+    background-color: rgb(50, 49, 49);
     color: white;
     border: 1px black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 40px;
 }
 
 #registerform>h2 {
@@ -37,13 +41,6 @@
     padding: 3px;
 }
 
-.formdivone, .formdivtwo, .formdivthree, .formdivfour, .formdivfive 
-
-
-.formdivone>input {
-    border-color: grey;
-    border-radius: 4px;
-}
 
 .formdivtwo>input {
     border-color: grey;
@@ -57,5 +54,29 @@
 
 #registersection {
     background-image: url('images/ninjago.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+#submitbutton {
+    width: 100%;
+    height: 35px;
+}
+
+#formparagraph {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 800px) {
+    #registerform {
+        text-align: center;
+        padding: 10px;
+        width: 72%;
+    }
+    #registersection {
+        width: 100%;
+        background-image: url('images/greenscreen.jpg');
+        background-size: cover;
+
+    }
 }
