@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>web-page with semantic elements</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="Header, Main, Footer, Aside"/>
+        <meta name="description" content="using semantics in HTML"/>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <a href="index.html">First Web-Page</a>
+                <a href="index2.html">Second Web-Page</a>
+                <a href="index3.html">Third Web-Page</a>
+                <a href="index4.html">Fourth Web-Page</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <p>To type an em dash with your keyboard press a combination of these keys <kbd>Alt+0151</kbd></p>
+
+                <code>function changeParagraph() { <br/>
+                    document.getElementById("paragraph").innerHTML = "I LOVE GOD!";<br/>
+                    document.getElementById("paragraph").style.textDecoration = "underline";<br/>
+                }
+                </code>
+
+                <pre>
+                <code>function changeParagraph() { 
+                    document.getElementById("paragraph").innerHTML = "I LOVE GOD!";
+                    document.getElementById("paragraph").style.textDecoration = "underline";
+                }
+                </code>
+                </pre>
+
+                <samp>
+                    This file already exists. &nbsp; &nbsp; Still download
+                </samp>
+
+                <p><var>x</var>+5=√25</p>
+                
+                <p>This is a &#8364;</p>
+            </section>
+            <section>
+                <form>
+                    <label for="fname">First Name:</label><br/>
+                    <input type="text" id="fname" name="fname"><br/>
+                    <label for="lname">Last Name:</label><br/>
+                    <input type="text" id="lname" name="lname">
+                </form>
+
+                <form>
+                    <input type="radio" id="HTML" name="fav_language" value="HTML">
+                    <label for="HTML">HTML</label><br/>
+                    <input type="radio" id="CSS" name="fav_language" value="CSS">
+                    <label for="CSS">CSS</label><br/>
+                    <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </form>
+                <br/>
+
+                <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                    <input type="checkbox" id="pet1" name="pet1" value="Parrot">
+                    <label for="pet1">I have a parrot.</label>
+                    <input type="checkbox" id="pet2" name="pet2" value="Cat">
+                    <label for="pet2">I have a cat.</label>
+                    <input type="checkbox" id="pet3" name="pet3" value="Dog">
+                    <label for="pet3">I have a dog.</label>
+                    <input type="submit" value="Submit">
+                </form>
+                <br/>
+
+                <form action="index7.html">
+                    <label for="FirstName">First Name:</label><br/>
+                    <input type="text" id="FirstName" name="FName"><br/>
+                    <label for="LastName">Last Name:</label><br/>
+                    <input type="text" id="LastName" name="LName">
+                    <input type="submit" value="Submit">
+                </form>
+                <br/>
+                <br/>
+            </section>
+            <section id="registersection">
+                <div id="registerform">
+                    <h2>SIGN UP AND START HAVING FUN!</h2>
+                    <form action="index7.html" target="_blank" autocomplete="off" novalidate>
+                        <div class="formdivone">
+                            <label for="birthday">Birthday</label><br/>
+                            <input type="date" id="birthday" name="userbirthday"><br/><br/>
+                        </div>
+                        <div class="formdivtwo">
+                            <label for="myfirstname" class="firstlabel">First Name:</label><br/>   
+                            <input type="text" id="myfirstname" name="firstname"><br/><br/>
+                        </div>
+
+                        <div class="formdivthree">
+                            <label for="mysecondname">Second Name:</label><br/>
+                            <input type="text" id="mysecondname" name="secondname"><br/><br/>
+                        </div>
+    
+                        <div class="formdivfour">
+                            <p>Gender (optional)</p>
+                            <input type="radio" id="male" name="pickgender" value="gendermale">&nbsp;
+                            <label for="male">Male</label>
+        
+                            <input type="radio" id="female" name="pickgender" value="genderfemale">&nbsp;
+                            <label for="female">Female</label><br/><br/>
+                        </div>
+
+                        <div class="formdivfive">
+                            <label for="age" title="This helps choose games to suit your taste">Pick your real age:</label><br/><br/>
+                            <input type="range" id="age" name="userage">
+                        </div>
+                        <input type="submit">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
